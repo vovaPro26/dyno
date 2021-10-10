@@ -16,20 +16,29 @@ const getDynoElement = () => {
 }
 
 const onClickHandler = () => {
-    
+    if(jumpInProces === 1) {
+        return
+    }
+    jumpInProces=1
+    goUp()
 }
 
 let goDown = function() {
     if(pixels === 0){
+        jumpInProces=0
         return
     }
-
+    
     const dyno = getDynoElement();
-
+    
     // lol.style.position = "relative";
     dyno.style.bottom = pixels + "px";
     pixels-= 2
     setTimeout(goDown, 10)
+}
+
+const kaktusPlace = () => {
+    
 }
 
 let goUp = function() {
@@ -56,10 +65,10 @@ let kaktusRun = function() {
 
 
     // if(vova === conteinerWidth.height) {
-    //     vova = -50
+        //     vova = -50
     // }
-
-
+    
+    
 let mouseDownHendler = function() {
     set()
 }

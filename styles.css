@@ -15,11 +15,13 @@
     position: relative;
 }
 
-/* #kaktus {
-    margin-top: -57.5px;
-    margin-left: 100px;
+#kaktus {
+     /* margin-top: -57.5px; */
+    margin-left: 1000px;
+    bottom: 60px;
+    /* float: left; */
     position: relative;
-} */
+}
 
 /* .parent{
     position: absolute;
