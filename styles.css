@@ -1,26 +1,44 @@
 .container {
-    /* position: absolute;
-    left: 300px; */
+    position: absolute;
+    /* left: 300px; */
     margin-left: 300px;
     margin-top: 300px;
     height: 150px;
     width: 1000px;
     border: 1px blue solid;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #head {
-    margin-top: 90px;
-    margin-left: 50px;
+    left: 70px;
+    /* margin-top: 70px; */
+    /* margin-left: 50px; */
+    bottom: 0px;
+    width: min-content;
     position: relative;
+    display: inline-block;
+    position: absolute;
 }
 
 #kaktus {
-     /* margin-top: -57.5px; */
-    margin-left: 1000px;
-    bottom: 60px;
+     /* margin-top: 90px; */
+    bottom: 0px;
+    /* width: min-content; */
     /* float: left; */
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    display: inline-block;
+}
+
+.kaktus-img {
+    width: 25px;
+    height: 30px;
+    /* max-width: 20px; */
+}
+
+.dino-img {
+    width: 40px;
+    height: 45px;
 }
 
 /* .parent{

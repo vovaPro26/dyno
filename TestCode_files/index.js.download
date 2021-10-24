@@ -6,7 +6,6 @@ let vovaId
 let vovaId2
 let jumpInProces  
 let dynoElement
-let stopDino
 
 const getDynoElement = () => {
     if (!dynoElement) {
@@ -64,7 +63,6 @@ const crash = function(kaktusPlace, dynoPlace) {
 
     if( dynoPlace.y + dynoPlace.height >=  kaktusPlace.y && dynoPlace.x + dynoPlace.width >= kaktusPlace.x ){
         // alert("alksjdfka;dkaf")
-        stopDino=1
         return true
     }
     
@@ -74,9 +72,6 @@ const crash = function(kaktusPlace, dynoPlace) {
 }
 
 const onClickHandler = () => {
-    if (stopDino===1) {
-        return
-    }
     if(jumpInProces === 1) {
         return
     }
@@ -132,7 +127,7 @@ let kaktusRun = function() {
         alert("здох")
         return
     }
-    if(kaktusPixels === -15) {
+    if(kaktusPixels === -5) {
         kaktusPixels = 1015
     }
     setTimeout(kaktusRun, 10)
